@@ -38,4 +38,19 @@ function ticketClass(Class, isIncrease) {
     }
   }
   ticketInput.value = ticketNewCount;
+  total();
+}
+
+//Total price
+function total() {
+  let firstInput = document.getElementById("first-class");
+  let firstCount = parseInt(firstInput.value);
+  let economyInput = document.getElementById("economy-class");
+  let economyCount = parseInt(economyInput.value);
+  let subTotal = firstCount * 150 + economyCount * 100;
+  document.getElementById("sub-total").innerText = subTotal;
+  let tex = subTotal * 0.1;
+  document.getElementById("tex").innerText = "$" + tex;
+  let total = tex + subTotal;
+  document.getElementById("total").innerText = "$" + total;
 }
