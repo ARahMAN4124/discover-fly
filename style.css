@@ -8,6 +8,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background: url("images/bg.png");
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -51,6 +52,8 @@ a.active {
   padding: 25px;
   border-radius: 5px;
   float: left;
+  position: relative;
+  display: block;
 }
 .booking-form h3 {
   margin: 10px 0px;
@@ -123,4 +126,37 @@ a.active {
 }
 .mark {
   cursor: pointer;
+  padding: 0.5rem;
+  background-color: #3352f2;
+  color: #ffffff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#after-buy {
+  margin-top: 5rem;
+  position: relative;
+  width: 400px;
+  background-color: white;
+  padding: 1rem;
+  display: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#after-buy h2,
+h3,
+h5 {
+  text-align: center;
+}
+#after-buy p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

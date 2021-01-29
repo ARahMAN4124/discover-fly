@@ -27,8 +27,8 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
-        <div class="booking-form">
+    <main id="main-content" class="main-content container">
+        <div class="booking-form" id="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -54,7 +54,8 @@
                     <input class="inp-style inp-width" value="0" id="first-class" type="number" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <p><span id="first-class-increase" class="mark">+</span> <span id="first-class-decrease" class="mark">-</span></p>
+                    <button class="mark" id="first-class-increase">+</button>
+                    <button class="mark" id="first-class-decrease" >-</button>
                 </div>
             </div>
             
@@ -64,7 +65,8 @@
                     <input class="inp-style inp-width" value="0" type="number" id="economy-class" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span id="economy-class-increase" class="mark">+</span> <span id="economy-class-decrease" class="mark">-</span> </p>
+                    <button class="mark" id="economy-class-increase">+</button>
+                    <button class="mark" id="economy-class-decrease">-</button>
                 </div>
             </div>
             <div class="calculations">
@@ -82,7 +84,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p id="tex">$0</p>
+                        <p>$<span id="tax">0</span></p>
                     </div>
                 </div>
                 <hr>
@@ -91,13 +93,19 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p id="total">0</p>
+                        <p>$<span id="total">0</span></p>
                     </div>
                 </div>
             </div>
             <button class="btn-style" id="booking">Book Now</button>
         </div>
-
+        <div id="after-buy">
+            <h2>You Bought</h2>
+            <p>First Class Ticket: <span id="first-class-ticket"></span></p>
+            <p>Economy Ticket: <span id="economy-ticket"></span></p>
+            <h3>Thank You Sir</h3>
+            <h5>Have a nice trip!!</h5>
+        </div>
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
